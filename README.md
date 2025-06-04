@@ -34,9 +34,11 @@ In `src/exercises/Exercise1.jsx`, you need to:
 
 ### Requirements
 - Use the `useEffect` hook with proper dependencies
-- When `characterPosition === 8` (door position), set the `message` state to include the exact text "Character has reached the door"
-- When the character moves away from the door, clear the message
-- The success message should be displayed in the green div that appears below the game
+- When `characterPosition === 8` (door position):
+    - Set the `message` state to include the exact text "Character has reached the door"
+    - Set the `hasReachedDoor` to true
+- When the character moves away from the door, clear the message and `hasReachedDoor`
+- The success message should be displayed!
 
 ### Success Criteria
 - The exercise will automatically detect when you've correctly implemented the useEffect
